@@ -1,0 +1,5 @@
+Principais idéias:
+
+- Aba de história dos carros
+- Informações técnicas sobre alguns modelos mais icônicos de história
+- Criação de projeto de motores, onde pode ser visto a potência que este motor geraria e o peso que ele teria
