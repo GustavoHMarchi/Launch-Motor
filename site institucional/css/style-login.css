@@ -1,0 +1,106 @@
+*{
+    font-family:monospace;
+    font-size: large;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.navBar{
+    width: 300px;
+    height: 762px;
+    background-color: #545454;
+    border-right: 4px solid #af0000;
+}
+.navBar img{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.navBar li{
+    color: #ffffff;
+    margin-top: 5px;
+}
+.navBar a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+}
+.inicio{
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    height: 250px;
+    width: 1280px;
+    justify-content: end;    
+}
+.inicio span{
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 190px;
+    font-size: x-large;
+    border-bottom: 4px solid #af0000;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+    height: 512px;
+    color: #ffffff;
+}
+.titulo{
+    font-size: xx-large;
+    margin-top: 40px;
+    margin-right: 40px;
+    text-align: end;
+}
+.card{
+    display: flex;
+    background-color: #545454;
+    padding: 30px;
+    width: 925px;
+    height: 350px;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    border-radius: 30px;
+}
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.opcoes span{
+    margin-top: 50px;
+}
+.opcoes input{
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botao button{
+    width: 300px;
+    height:50px;
+    border: 3px solid #af0000;
+    border-radius: 15px;
+    color: #af0000;
+}
+.botao a{
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: medium   ;
+}

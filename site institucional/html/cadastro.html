@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/style-cadastro.css">
+</head>
+<body>
+    <div class="navBar">
+        <img src="../img/logo.PNG">
+        <ul>
+            <li><a href="../html/Inicial.html">Sobre nós</a></li>
+            <li><a href="../html/cadastro.html">Cadastro</a></li>
+            <li><a href="../html/login.html">Login</a></li>
+        </ul>
+    </div>
+    <div class="conteudo">
+        <div class="inicio">
+            <span>Cadastro</span>
+        </div>
+        <div class="cadastro">
+            <span class="titulo">Cadastro</span>
+            <div class="card">
+                <div class="opcoes">
+                    <span>Nome:</span>
+                    <input type="text" id="input_nome" placeholder="Seu nome">
+                    <span>Email:</span>
+                    <input type="text" id="input_email"placeholder="Seu email">
+                    <span>Sua montadora favortida de JDMs</span>
+                    <select id="input_montadora">
+                        <option value="nenhuma">Selecione uma opção</option>
+                        <option value="Subaru">Subaru</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Mazda">Mazda</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Nissan">Nissan</option>
+                    </select>
+                    <span>Senha:</span>
+                    <input type="text" id="input_senha" placeholder="Sua senha">
+                    <span>Confirmar senha:</span>
+                    <input type="text" id="input_conf_senha" placeholder="Confirme sua senha">
+                </div>
+                <div class="botao">
+                    <button onclick="cadastrar()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

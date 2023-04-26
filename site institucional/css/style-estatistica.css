@@ -1,0 +1,91 @@
+*{
+    font-family:monospace;
+    font-size: large;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.navBar{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 762px;
+    background-color: #545454;
+    border-right: 4px solid #af0000;
+    position: fixed;
+}
+.navBar img{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.navBar li{
+    color: #ffffff;
+    margin-top: 5px;
+}
+.navBar ul{
+    margin-top: 200px;
+}
+.navBar a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.saudacao{
+    color: #ffffff;
+    font-size: x-large;
+    margin-left: 30px;
+}
+.sair{
+    color: #ffffff;
+    margin-left: 100px;
+    margin-top: 270px;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 256px;
+}
+.inicio{
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    height: 250px;
+    width: 1280px;
+    justify-content: end;    
+}
+.inicio span{
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 190px;
+    font-size: x-large;
+    border-bottom: 4px solid #af0000;
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+    height: 512px;
+    color: #ffffff;
+}
+.titulo{
+    font-size: xx-large;
+    margin-top: 40px;
+    margin-right: 40px;
+    text-align: end;
+}
+.grafico{
+    display: flex;
+    background-color: #545454;
+    width: 900px;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin: auto;
+}
