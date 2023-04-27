@@ -119,8 +119,8 @@ body{
 .gráfico{
     display: flex;
     background-color: #e2e2e2;
-    width: 600px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     justify-content: center;
     align-items: center;
 }
@@ -130,13 +130,12 @@ body{
     margin-left: 65px;
     justify-content: center;
 }
-.criar a{
+.criar button{
     color: #ffffff;
-    text-decoration: none;
     background-color: #545454;
-    justify-content: center;
     padding: 20px;
     border-radius: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
+    border: none;
 }

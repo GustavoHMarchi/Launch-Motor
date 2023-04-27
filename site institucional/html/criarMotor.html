@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de motores</title>
+    <link rel="stylesheet" href="../css/style-criacao.css">
+</head>
+<body>
+    <div class="navBar">
+        <a href="../html/inicial-logado.html"><img src="../img/logo.PNG"></a>
+        <span class="saudacao">Seja bem vindo!</span>
+        <ul>
+            <li><a href="../html/estatisticas.html">Estatísticas</a></li>
+            <li><a href="../html/historias.html">História de alguns JDMs</a></li>
+            <li><a href="../html/motores.html">Principais motores</a></li>
+        </ul>
+        <a href="../html/Inicial.html" class="sair">Sair</a>
+    </div>
+    <div class="conteudo">
+        <div class="inicio">
+            <span>Criação de motores</span>
+        </div>
+        <div class="motores">
+            <div class="cards">
+                <div class="motorE">
+                    <span>Motor</span>
+                    <div class="opcoes">
+                        Insira quantos pistões quer:
+                        <select id="input_pistoes">
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                        </select>
+                        <br>
+                        Insira quantas turbinas quer:
+                        <select id="input_turbinas">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <br>
+                        Insira quantos bicos por cilindro você quer:
+                        <select id="input_bicos">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="motorD">
+                    <span>Dados do motor</span>
+                    <div class="gráfico">gráficos</div>
+                </div>
+            </div>
+        </div>
+        <div class="criar">
+            <button>Criar</button>
+        </div>
+        </div>
+    </body>
+</html>
