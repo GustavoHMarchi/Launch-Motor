@@ -79,6 +79,7 @@ body{
     text-align: end;
 }
 .cards{
+    margin-left: 65px;
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
@@ -89,10 +90,25 @@ body{
     background-color: #545454;
     padding:10px;
     margin: 20px;
-    height: 300px;
-    width: 200px;
+    height: 400px;
+    width: 330px;
     text-align: center;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+}
+.card h3{
+    font-size: 20px;
+    color: #ffffff;
+    border-bottom: #af0000 3px solid;
+    margin-top: 20px;
+}
+.card img{
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.card span{
+    margin-bottom: 30px;
 }
