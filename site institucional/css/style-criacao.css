@@ -116,16 +116,18 @@ body{
     margin-bottom: 30px;
     text-align: center;
 }
-.gráfico{
+.info{
     display: flex;
     background-color: #e2e2e2;
-    width: 300px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
     justify-content: center;
     align-items: center;
+    color: #000000;
 }
 .criar{
     display: flex;
+    flex-direction: column;
     background-color: #303030;
     margin-left: 65px;
     justify-content: center;
@@ -138,4 +140,35 @@ body{
     margin-top: 40px;
     margin-bottom: 40px;
     border: none;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+}
+.opcoes input{
+    border-radius: 5px;
+    border: none
+}
+.opcoes select{
+    border-radius: 5px;
+    border: none;
+}
+.opcoes span{
+    font-size: large;
+}
+.resultados{
+    background-color: #545454;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+.resultados img{
+    width: 55px;
 }

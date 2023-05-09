@@ -27,7 +27,10 @@
                 <div class="motorE">
                     <span>Motor</span>
                     <div class="opcoes">
-                        Insira quantos pistões quer:
+                        <span>Insira qual o nome do seu motor:</span>
+                        <input type="text" id="input_nome">
+                        <br><br>
+                        <span>Insira quantos pistões quer:</span>
                         <select id="input_pistoes">
                             <option value="2">2</option>
                             <option value="4">4</option>
@@ -37,30 +40,96 @@
                             <option value="10">10</option>
                             <option value="12">12</option>
                         </select>
-                        <br>
-                        Insira quantas turbinas quer:
+                        <br><br>
+                        <span>Quantas turbinas quer:</span>
                         <select id="input_turbinas">
                             <option value="0">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
-                        <br>
-                        Insira quantos bicos por cilindro você quer:
+                        <br><br>
+                        <span>Insira quantos bicos por cilindro você quer:</span>
                         <select id="input_bicos">
                             <option value="1">1</option>
                             <option value="2">2</option>
+                        </select>
+                        <br><br>
+                        <span>Insira quantas válvulas por cilindro você quer:</span>
+                        <select id="input_valvulas">
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
                         </select>
                     </div>
                 </div>
                 <div class="motorD">
                     <span>Dados do motor</span>
-                    <div class="gráfico">gráficos</div>
+                    <div class="info" id="div_info"></div>
                 </div>
             </div>
         </div>
         <div class="criar">
-            <button>Criar</button>
+            <button onclick="cadastrar()">Cadastrar</button>
+            <div id="div_resultados" class="resultados"></div>
         </div>
         </div>
     </body>
 </html>
+<img src="">
+<script>
+    var listaNome = [];
+    var listaPistões = [];
+    var listaTurbina = [];
+    var listaBico = [];
+    var listaValvula = [];
+    var listaCilindros = [];
+
+    function cadastrar(){
+        var nome = input_nome.value;
+        var pistoes = Number(input_pistoes.value);
+        var turbinas = Number(input_turbinas.value);
+        var bicos = Number(input_bicos.value);
+        var valvulas = Number(input_valvulas.value);
+        var cilindros = Number(input_pistoes.value);
+        listaNome.push(nome);
+        listaPistões.push(pistoes);
+        listaTurbina.push(turbinas);
+        listaBico.push(bicos);
+        listaValvula.push(valvulas);
+        listaCilindros.push(cilindros);
+
+        div_resultados.innerHTML += `Seu motor "${listaNome[listaNome.length - 1]}" é composto por:`;
+        div_resultados.innerHTML += `<br><br>`
+        for(var contadorPistao = 1; contadorPistao <= pistoes; contadorPistao ++){
+            div_resultados.innerHTML += `<img src="../img/pistao.png">`
+        }
+        div_resultados.innerHTML += `<br>`
+        for(var contadorTurbina = 1; contadorTurbina <= turbinas; contadorTurbina ++){
+            div_resultados.innerHTML += `<img src="../img/turbina.png">`
+        }
+        div_resultados.innerHTML += `<br>`
+        for(var contadorBico = 1; contadorBico <= (bicos * pistoes); contadorBico ++){
+            div_resultados.innerHTML += `<img src="../img/bico.png">`
+        }
+        div_resultados.innerHTML += `<br>`
+        for(var contadorValvula = 1; contadorValvula <= (valvulas * pistoes); contadorValvula ++){
+            div_resultados.innerHTML += `<img src="../img/valvula.png">`
+        }
+        div_resultados.innerHTML += `<br>`
+
+        var PPistao = pistoes * 40;
+        var PTurbina = turbinas * 80;
+        var PBico = bicos * 2;
+        var PValvulas = valvulas * 5;
+        var Pcilindro = pistoes * 10;
+        var PTotal = PPistao + PTurbina + PBico + PValvulas + Pcilindro
+        var TPistao = pistoes * 3;
+        var TTurbina = turbinas * 4;
+        var TBico = bicos * 1;
+        var TValvulas = valvulas * 2;
+        var Tcilindro = pistoes * 4;
+        var TTotal = TPistao + TTurbina + TBico + TValvulas + Tcilindro
+        div_info.innerHTML = `Sua potência é de: ${PTotal}CV<br>`
+        div_info.innerHTML += `Seu torque é de: ${TTotal}kg/fm`
+        }
+</script>
