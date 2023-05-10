@@ -124,6 +124,8 @@ body{
     justify-content: center;
     align-items: center;
     color: #000000;
+    padding: 10px;
+    border-radius: 20px;
 }
 .criar{
     display: flex;
@@ -158,16 +160,17 @@ body{
     font-size: large;
 }
 .resultados{
-    background-color: #545454;
+    background-color: #e2e2e2;
     width: fit-content;
     height: fit-content;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 40px;
     border-radius: 20px;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     padding-top: 10px;
+    padding: 10px;
 }
 .resultados img{
     width: 55px;

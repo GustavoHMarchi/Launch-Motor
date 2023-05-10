@@ -64,13 +64,13 @@
                 </div>
                 <div class="motorD">
                     <span>Dados do motor</span>
-                    <div class="info" id="div_info"></div>
+                    <div class="info" id="div_info">Informações do motor criado</div>
                 </div>
             </div>
         </div>
         <div class="criar">
             <button onclick="cadastrar()">Cadastrar</button>
-            <div id="div_resultados" class="resultados"></div>
+            <div id="div_resultados" class="resultados">Dados do seu motor</div>
         </div>
         </div>
     </body>
@@ -98,7 +98,7 @@
         listaValvula.push(valvulas);
         listaCilindros.push(cilindros);
 
-        div_resultados.innerHTML += `Seu motor "${listaNome[listaNome.length - 1]}" é composto por:`;
+        div_resultados.innerHTML = `Seu motor "${listaNome[listaNome.length - 1]}" é composto por:`;
         div_resultados.innerHTML += `<br><br>`
         for(var contadorPistao = 1; contadorPistao <= pistoes; contadorPistao ++){
             div_resultados.innerHTML += `<img src="../img/pistao.png">`
@@ -163,5 +163,5 @@
         else if(TTotal >=75 && TTotal < 100){
             div_info.innerHTML += `<br>Para chegar a 100kg de torque ainda faltam ${100 - TTotal}kg`
         }
-        }
+    }
 </script>
