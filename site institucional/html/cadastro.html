@@ -38,9 +38,9 @@
                         <option value="Nissan">Nissan</option>
                     </select>
                     <span>Senha:</span>
-                    <input type="text" id="input_senha" placeholder="Sua senha">
+                    <input type="password" id="input_senha" placeholder="Sua senha">
                     <span>Confirmar senha:</span>
-                    <input type="text" id="input_conf_senha" placeholder="Confirme sua senha">
+                    <input type="password" id="input_conf_senha" placeholder="Confirme sua senha">
                 </div>
                 <div class="botao">
                     <button onclick="cadastrar()">Cadastrar</button>
@@ -49,3 +49,26 @@
         </div>
 </body>
 </html>
+
+<script>
+    function cadastrar(){
+    var nome = input_nome.value;
+    var email = input_email.value;
+    var montadora = input_montadora.value;
+    var senha = input_senha.value;
+    var conf_senha = input_conf_senha.value;
+    var vali_email = email.indexOf("@")
+        if(nome == "" || email == "" || montadora == "" || senha == "" || conf_senha == ""){
+            alert("Um ou mais campos estão vazios. Favor preenche-los")
+        }
+        else if(vali_email < 0){
+            alert("Insira um email válido")
+        }
+        else if(senha.length < 8){
+            alert("Sua senha deve ter 8 ou mais caractéres")
+        }
+        else if(senha != conf_senha){
+            alert("Senha e confirmação de senha não coincidem")
+        }
+    }
+</script>

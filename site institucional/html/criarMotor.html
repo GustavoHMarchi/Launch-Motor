@@ -131,5 +131,37 @@
         var TTotal = TPistao + TTurbina + TBico + TValvulas + Tcilindro
         div_info.innerHTML = `Sua potência é de: ${PTotal}CV<br>`
         div_info.innerHTML += `Seu torque é de: ${TTotal}kg/fm`
+
+        if(PTotal < 200){
+            div_info.innerHTML += `<br><br>Para chegar a 200cv ainda faltam ${200 - PTotal}cv`
+        }
+        else if(PTotal >= 200 && PTotal < 300){
+            div_info.innerHTML += `<br><br>Para chegar a 300cv  ainda faltam ${300 - PTotal}cv`
+        }
+        else if(PTotal >= 300 && PTotal < 400){
+            div_info.innerHTML += `<br><br>Para chegar a 400cv ainda faltam ${400 - PTotal}cv`
+        }
+        else if(PTotal >= 400 && PTotal < 500){
+            div_info.innerHTML += `<br><br>Para chegar a 500cv ainda faltam ${500 - PTotal}cv`
+        }
+        else if(PTotal >= 500 && PTotal < 600){
+            div_info.innerHTML += `<br><br>Para chegar a 500cv ainda faltam ${600 - PTotal}cv`
+        }
+        else if(PTotal >= 600 && PTotal < 700){
+            div_info.innerHTML += `<br><br>Para chegar a 700cv ainda faltam ${700 - PTotal}cv`            
+        }
+
+        if(TTotal < 25){
+            div_info.innerHTML += `<br>Para chegar a 25kg de torque ainda faltam ${25 - TTotal}kg`
+        }
+        else if(TTotal >=25 && TTotal < 50){
+            div_info.innerHTML += `<br>Para chegar a 50kg de torque ainda faltam ${50 - TTotal}kg`
+        }
+        else if(TTotal >=50 && TTotal < 75){
+            div_info.innerHTML += `<br>Para chegar a 75kg de torque ainda faltam ${75 - TTotal}kg`
+        }
+        else if(TTotal >=75 && TTotal < 100){
+            div_info.innerHTML += `<br>Para chegar a 100kg de torque ainda faltam ${100 - TTotal}kg`
+        }
         }
 </script>
