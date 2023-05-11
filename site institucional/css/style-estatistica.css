@@ -80,7 +80,7 @@ body{
 }
 .grafico{
     display: flex;
-    background-color: #545454;
+    background-color: #e2e2e2;
     width: 900px;
     height: 400px;
     text-align: center;
@@ -88,4 +88,6 @@ body{
     justify-content: center;
     margin-top: 10px;
     margin: auto;
+    border-radius: 20px;
+    padding: 5px;
 }

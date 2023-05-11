@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estatísticas</title>
     <link rel="stylesheet" href="../css/style-estatistica.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="navBar">
@@ -24,6 +25,47 @@
         </div>
         <div class="dados">
             <span class="titulo">Montadoras favoritas dos usuários</span>
-            <div class="grafico">Gráficos que futuramente serão inseridos</div>
+            <div class="grafico"><canvas id="myChart"></canvas>
+            <span></span>    
+            <div>
         </div>
     </div>
+</body>
+</html>
+
+<script>
+    const labels = [
+        'Subaru',
+        'Honda',
+        'Mazda',
+        'Toyota',
+        'Nissan'
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+                barPercentage: 0.50,
+                minBarLenght: 5,
+                label: 'Porcentagem de cada montadora',
+                backgroundColor: [
+                    '#800000',
+                    '#b22222',
+                    '#fa8072',
+                    '#ff6347',
+                    '#ff0000'],
+                borderColor: '#000000',
+                data: [25, 30, 10, 15, 20],
+            },
+        ]
+    }
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {}
+    };
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+</script>
