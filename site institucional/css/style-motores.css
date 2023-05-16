@@ -140,3 +140,18 @@ body{
     margin-top: 40px;
     margin-bottom: 40px;
 }
+.footer{
+    background-color: #af0000;
+    display: flex;
+    justify-content: space-around;
+}
+.secao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.secao img{
+    width: 50px;
+    margin-top: 60px;
+}

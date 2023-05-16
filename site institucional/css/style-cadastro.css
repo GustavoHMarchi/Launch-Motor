@@ -12,6 +12,7 @@ body{
     height: 762px;
     background-color: #545454;
     border-right: 4px solid #af0000;
+    position: fixed;
 }
 .navBar img{
     display: flex;
@@ -32,6 +33,7 @@ body{
 .conteudo{
     display: flex;
     flex-direction: column;
+    margin-left: 238px;
 }
 .inicio{
     display: flex;
@@ -96,4 +98,19 @@ body{
     border: 3px solid #af0000;
     border-radius: 15px;
     color: #af0000;
+}
+.footer{
+    background-color: #af0000;
+    display: flex;
+    justify-content: space-around;
+}
+.secao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.secao img{
+    width: 50px;
+    margin-top: 60px;
 }
